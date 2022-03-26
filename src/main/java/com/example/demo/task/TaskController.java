@@ -7,6 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path="api/v1/task")
+@CrossOrigin
 public class TaskController {
 
     private final TaskService taskService;
