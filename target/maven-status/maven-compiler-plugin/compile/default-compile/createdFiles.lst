@@ -1,0 +1,6 @@
+com/example/demo/DemoApplication.class
+com/example/demo/task/TaskConfig.class
+com/example/demo/task/Task.class
+com/example/demo/task/TaskRepository.class
+com/example/demo/task/TaskService.class
+com/example/demo/task/TaskController.class
