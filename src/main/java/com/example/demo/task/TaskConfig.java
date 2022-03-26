@@ -12,15 +12,8 @@ public class TaskConfig {
     @Bean
     CommandLineRunner commandLineRunner(TaskRepository repository) {
         return args -> {
-                Task makeDinner = new Task (
-                        "Make dinner",
-                        false
-                );
-                Task sleepAt5 = new Task (
-                        "Sleep At 5",
-                        true
-                );
-                repository.saveAll(List.of(makeDinner, sleepAt5));
+
+                repository.saveAll(List.of());
         };
     }
 }

@@ -1,10 +1,29 @@
 import axios from "axios";
 
-const TASKS_REST_API_URL = "http://localhost:8080/api/v1/task";
-
 class TaskService {
     getTasks() {
-        return axios.get(TASKS_REST_API_URL);
+        return axios.get("http://localhost:8080/api/v1/task");
+    }
+
+    completeTask(task) {
+        if(!task.done) return axios.put("http://localhost:8080/api/v1/task/" + task.id + "?isDone=true").then(response => response.data)
+        else return axios.put("http://localhost:8080/api/v1/task/" + task.id + "?isDone=false").then(response => response.data)
+    }
+
+    deleteTask(task) {
+        return axios.delete("http://localhost:8080/api/v1/task/" + task.id);
+    }
+
+    addTask(newTask) {
+        return axios.post('http://localhost:8080/api/v1/task/', {
+            description: newTask,
+          })
+          .then((response) => console.log(response));
+    }
+
+    editTask(newTask, taskId) {
+        return axios.put('http://localhost:8080/api/v1/task/' + taskId + "?"+"description="+newTask)
+          .then((response) => console.log(response));
     }
 }
 

@@ -45,8 +45,6 @@ public class TaskService {
                 !Objects.equals(task.getDescription(), description)) {
             task.setDescription(description);
         }
-        if(!Objects.equals(task.getDone(), isDone)) {
-            task.setDone(isDone);
-        }
+        task.setDone(isDone);
     }
 }

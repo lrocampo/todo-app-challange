@@ -53,7 +53,7 @@ public class Task {
     }
 
     public void setDone(Boolean done) {
-        isDone = done;
+        this.isDone = done;
     }
 
     @Override

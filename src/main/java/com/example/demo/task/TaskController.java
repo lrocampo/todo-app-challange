@@ -7,7 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path="api/v1/task")
-@CrossOrigin
+@CrossOrigin("*")
 public class TaskController {
 
     private final TaskService taskService;
@@ -24,6 +24,7 @@ public class TaskController {
 
     @PostMapping
     public void registerNewTask(@RequestBody Task task) {
+        task.setDone(false);
         taskService.addNewTask(task);
     }
 
