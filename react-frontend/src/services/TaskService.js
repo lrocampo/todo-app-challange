@@ -23,7 +23,9 @@ class TaskService {
 
     editTask(newTask, taskId) {
         return axios.put('http://localhost:8080/api/v1/task/' + taskId + "?"+"description="+newTask)
-          .then((response) => console.log(response));
+          .then(() => axios.put('http://localhost:8080/api/v1/task/' + taskId + "?"+"isDone=false")).then((response) => console.log(response));
+        
+        
     }
 }
 
