@@ -18,7 +18,7 @@ Finally, as I received the assignment for this project I had three days to plan 
 * react v17.0.2
 * VSCode and IntelliJ Ultimate for editing.
 
-### Install instruction
+### Install instructions
 Now that technologies were listed before, please ensure that your system has all the needed software.
 To run the whole project, open a terminal and run the `launch.sh` script as `./launch.sh`
 If permission to execute is denied, run `chmod +x launch.sh`
