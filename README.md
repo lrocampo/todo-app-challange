@@ -1,11 +1,11 @@
 # todo-app-challange
-I am challenged to do a full-stack SPA using Spring Boot and React.
+I was challenged to do a full-stack SPA using Spring Boot and React.
 
 ### What is this app about
-Todo App is a Single Page web Application, i.e. frontend and backend are different apps. It is developed on Spring Boot in the backened and React framework in the frontend. The backend app exposes a REST API that is the way in which the frontend app communicates with the backend, letting to do CRUD operations. The backend app is separated into layers (Task controller, task service and task repository). The app is fully responsive.
+Todo App is a Single Page web Application, i.e. frontend and backend are different apps. It is developed on Spring Boot in the backened and React framework in the frontend. The backend app exposes a REST API so the frontend app communicates with the backend, letting to do CRUD operations. The backend app is separated into layers (Task controller, task service and task repository). The app is fully responsive.
 
 With this to do app, you can create, edit and delete to-do items or tasks as also to mark them as completed, storing everything on a PostgreSQL database.
-This project has a launch.sh script which can run the java .jar file (containing the Spring Boot backend) and the react front-end.
+This project has a launch.sh script which can ((launch)) the app by running the java .jar file (containing the Spring Boot backend) and the react front-end.
 
 Finally, as I received the assignment for this project I had three days to plan the project, select the technologies and start coding. After these days, I can say it was a very fun challange. I felt that I had to work hard because I didn't have much time to go through the project and I felt I left my comfort zone. A true challange.
 
