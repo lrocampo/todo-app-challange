@@ -10,9 +10,9 @@ This project has a launch.sh script which can ((launch)) the app by running the 
 Finally, as I received the assignment for this project I had three days to plan the project, select the technologies and start coding. After these days, I can say it was a very fun challange. I felt that I had to work hard because I didn't have much time to go through the project and I felt I left my comfort zone. A true challange.
 
 ### Technologies
-* PostgreSQL 12.9
-* openjdk version 11.0.14
-* openjdk Runtime Environment (build 11.0.14+9)
+* PostgreSQL
+* openjdk version 11
+* openjdk Runtime Environment (build 11)
 * node v14.19.1
 * npm v6.14.16
 * react v17.0.2
@@ -20,5 +20,11 @@ Finally, as I received the assignment for this project I had three days to plan 
 
 ### Install instructions
 Now that technologies were listed before, please ensure that your system has all the needed software.
+
+Ensure that the database is initiliazed before execution. To do this (asumming you have postgresql installed on your machine), you can execute the command:
+
+`sudo -u postgres psql -c "CREATE DATABASE task;"`
+
 To run the whole project, open a terminal and run the `launch.sh` script as `./launch.sh`
 If permission to execute is denied, run `chmod +x launch.sh`
+
