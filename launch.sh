@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo -u postgres psql -c "CREATE DATABASE task;"
+
 # Make sure ports are free
 fuser 3001/tcp -k &
 
